@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  #node
+  node-react:
+    container_name: 'node-react'
+    build: .
+    volumes:
+      - ./main:/main
+    ports:
+      - '1234:1234'
